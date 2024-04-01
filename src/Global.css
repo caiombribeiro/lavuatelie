@@ -1,19 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
 
+body, html {
+  overflow-x: hidden;
+}
+
 .App-link {
   color: #61dafb;
 }
 
+.app {
+  width: auto;
+}
 .faixa {
   height: 950px;
+  max-width: 100%;
 }
 
 .faixap {
   height: 500px;
+  max-width: 100%;
 }
 
 .faixam {
   height: 105vh;
+  max-width: 100%;
 }
 
 .bg1 {
@@ -45,7 +55,6 @@
 }
 
 .degrade4 {
-
   background: linear-gradient(to bottom, rgba(224, 94, 120, 0.65) 0%, rgba(224, 94, 120, 1) 100%);
 }
 
