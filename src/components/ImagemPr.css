@@ -1,0 +1,27 @@
+.size_image{
+    height: 100%;
+    width: 70%;
+    border-radius: 25px;
+}
+
+.teste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+
+    .size_image{
+        width: 60%;
+ 
+    }
+}
+
+@media (max-width: 600px) {
+
+    .size_image{
+        width: 55%;
+ 
+    }
+}

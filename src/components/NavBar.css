@@ -1,0 +1,58 @@
+.cor_bg_navbar {
+    background-color: #E3D5EF !important; /* Altere para a cor desejada */
+}
+
+.cor_tx_navbar {
+    color: #48005c !important; /* Altere para a cor desejada */
+}
+
+.transparencia{
+    opacity: 0.91;
+}
+
+.pad{
+    padding: 10px;
+}
+
+.margin_nav {
+    margin-left: 2%;
+}
+
+.margin {
+    margin-left: 10px;
+}
+
+.marginVW {
+    margin-left: 63%;
+}
+
+.margin_right{
+    margin-right: 15px;
+}
+
+.nav-link {
+    border-radius: 15px !important;
+    padding: 15px !important;
+}
+
+.nav-link:hover {
+    background-color: #49005C !important;
+    color: #E3D5EF !important;
+}
+
+@media (max-width: 991px) {
+    .justify-center-lg {
+        justify-content: center !important;
+    }
+
+    .marginVW {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 991px) {
+    .justify-lg-end {
+        justify-content: flex-end !important;
+    }
+    
+}

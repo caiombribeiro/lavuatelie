@@ -1,0 +1,51 @@
+.bg_footer {
+    background-color: #49005C;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.divisao_footer {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contatos {
+    margin-top: 60px;
+    display: flex;
+}
+
+.final_texto {
+    font-size: small;
+    padding: 5px;
+}
+
+.flex_collumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flex_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    margin-top: 10px;
+}
+
+.flex_row img {
+    width: 50px;
+}
+
+.flex_row p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: aliceblue;
+    padding-left: 20px;
+}

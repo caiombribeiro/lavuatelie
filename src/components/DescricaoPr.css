@@ -1,0 +1,50 @@
+.size_descr{
+    height: 100%;
+    width: 70%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin_descr{
+    margin-bottom: 50px !important;
+}
+
+a {
+    text-decoration: none;
+    text-underline-offset: None;
+}
+
+.white{
+    color: #E3D5EF ;
+
+}
+
+.whiteR{
+    color: #f1ecf5 ;
+
+}
+
+.black{
+    color: #49005C ;
+
+}
+
+.bg_botao{
+    background-color: #49005C !important;
+    border-color: #E3D5EF;
+    color: #E3D5EF;
+
+}
+
+.bg_botao:hover{
+    background-color: #dc96ee !important;
+    color: #49005C;
+    border-color: #250342 ;
+}
+
+.padding_descr{
+    padding: 10px;
+}
+

@@ -1,0 +1,62 @@
+.App {
+    text-align: center;
+  }
+
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .faixa{
+    height: 1000px;
+  }
+  
+  .bg1{
+    background-color: #E3D5EF;
+  }
+  
+  .bg2{
+    background-color: #49005C;
+  }
+  
+  .bg3{
+    background-color: #AA48B7;
+  }
+  
+  .bg5{
+    background-color: #FFD1D3;
+  }
+  
+  .degrade1 {
+    background: linear-gradient(to bottom, rgba(227, 213, 239, 1) 30%,  rgba(170, 72, 183, 0.60) 100%);
+  }
+  
+  .degrade2 {
+    background: linear-gradient(to bottom, rgba(170, 72, 183, 0.60) 10%, rgba(170, 72, 183, 0.60) 60%, rgba(255, 209, 211, 0.60) 90%);
+  }
+  
+  .degrade3 {
+    background: linear-gradient(to bottom,rgba(255, 209, 211, 0.60) 10%,  rgba(255, 209, 211, 0.8) 70%, rgba(224, 94, 120, 0.65) 100%);
+  }
+  
+  .degrade4 {
+    background: linear-gradient(to bottom, rgba(224, 94, 120, 0.65) 0%, rgba(224, 94, 120, 1) 100%) ;
+  }
+  
+  .fleex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+  
+  .divisao {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
