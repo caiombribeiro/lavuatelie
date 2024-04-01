@@ -8,12 +8,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 80%;
+
 }
 
 @media (max-width: 991px) {
 
     .size_image{
         width: 60%;
+        margin-bottom: 20px;
  
     }
 }
@@ -22,6 +25,7 @@
 
     .size_image{
         width: 55%;
+        margin-bottom: 20px;
  
     }
 }
