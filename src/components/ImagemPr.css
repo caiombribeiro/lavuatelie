@@ -17,6 +17,7 @@
     .size_image{
         width: 60%;
         margin-bottom: 20px;
+        min-width: 200px;
  
     }
 }
