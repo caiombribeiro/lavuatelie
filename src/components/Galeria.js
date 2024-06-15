@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, ModalBody } from 'reactstrap';
 import './Galeria.css';
+import "../Global.css"
 
 const teste = "https://prefeitura.rio/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-16-at-16.42.03.jpeg"
 

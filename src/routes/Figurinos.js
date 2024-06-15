@@ -8,6 +8,17 @@ function Figurinos() {
   return (
     <div>
       <NavBarra />
+      {/* <div className='redbackground mg_top70 fleexcolumn faixaHead'>
+        <HeadPr
+          tipo_fade={"fade-right"}
+          head={"Figurinos"}
+          cor={"whiteR"}
+        />
+
+      </div> */}
+      <section className='faixaHead blackbackground fleexPainel mg_top70' >
+        <h1 className='size_h2White'>Figurinos</h1>
+      </section>
 
       <Galeria />
 
