@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Button from 'react-bootstrap/Button';
 
-function DescricaoPr({tipo_fade, head, texto, cor, refer}) {
+function DescricaoPr({tipo_fade, texto, cor, refer}) {
     useEffect(() => {
         AOS.init({
             duration: 1000 // duração da animação em milissegundos
@@ -13,7 +13,6 @@ function DescricaoPr({tipo_fade, head, texto, cor, refer}) {
     }, []);
     return (
         <div data-aos={tipo_fade} className={'size_descr ' + cor}>
-            <h1 className='margin_descr'>{head}</h1>
             <p className='margin_descr'>{texto}</p>
             <Link to={refer}>
             <Button className="bg_botao padding_descr" as="input" type="button" value="Saiba Mais" />{' '}

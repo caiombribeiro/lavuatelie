@@ -1,10 +1,10 @@
+// DescricaoNormal.js
 import React, { useEffect } from 'react';
-import "./DescricaoPr.css"
-
+import "./DescricaoPr.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function DescricaoNormal({tipo_fade, head, texto, cor}) {
+function DescricaoNormal({ tipo_fade, texto, cor }) {
     useEffect(() => {
         AOS.init({
             duration: 1000 // duração da animação em milissegundos
@@ -24,10 +24,9 @@ function DescricaoNormal({tipo_fade, head, texto, cor}) {
 
     return (
         <div data-aos={tipo_fade} className={'size_descr ' + cor}>
-            <h1 className='margin_descr'>{head}</h1>
             {renderText()}
         </div>
-    )
+    );
 }
 
-export default DescricaoNormal
+export default DescricaoNormal;

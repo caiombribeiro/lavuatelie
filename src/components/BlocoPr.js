@@ -1,55 +1,95 @@
+import React from 'react';
+
 import '../Global.css';
 import DescricaoPr from './DescricaoPr';
 import ImagemPr from './ImagemPr';
+import HeadPr from './HeadPr.js';
+import DescricaoHeadPr from './DescricaoHeadPr.js';
 
 import { useMediaQuery } from 'react-responsive';
 
-function BlocoPr({cor, refer, texto, head, imagem, ordenamento, bg_c}) {
-    // Determinar a classe CSS com base na ordem
-    let classeDivisaoDescricao, classeDivisaoImagem, tipo_fade_d, tipo_fade_i;
+function BlocoPr({ cor, refer, texto, head, imagem, ordenamento, classe, bg_c }) {
     const isMobile = useMediaQuery({ query: '(max-width: 991px)' });
 
+    let classeDivisaoDescricao, classeDivisaoImagem, classeDivisaoHead, tipo_fade_d, tipo_fade_i, tipo_fade_h;
 
-    // Se o ordenamento for 1, defina a ordem do descrição como 1 e da imagem como 2
-    if(isMobile){
-        classeDivisaoDescricao = 'divisao-ordem-2';
-        classeDivisaoImagem = 'divisao-ordem-1';
-        tipo_fade_d = "fade-left";
-        tipo_fade_i = "fade-right";
-    }
-
-    else if(ordenamento === 1) {
-        classeDivisaoDescricao = 'divisao-ordem-1';
+    if (isMobile) {
+        // Ajustar a ordem dos elementos para mobile
+        classeDivisaoHead = 'divisao-ordem-1';
         classeDivisaoImagem = 'divisao-ordem-2';
-        tipo_fade_d = "fade-right";
-        tipo_fade_i = "fade-left";
-
-    } else {
-        // Se o ordenamento não for 1, defina a ordem do descrição como 2 e da imagem como 1
-        classeDivisaoDescricao = 'divisao-ordem-2';
-        classeDivisaoImagem = 'divisao-ordem-1';
-        tipo_fade_d = "fade-left";
+        classeDivisaoDescricao = 'divisao-ordem-3';
+        tipo_fade_h = "fade-left";
         tipo_fade_i = "fade-right";
+        tipo_fade_d = "fade-left";
+    } else if (ordenamento === 1) {
+        classeDivisaoHead = 'divisao-ordem-1';
+        classeDivisaoImagem = 'divisao-ordem-2';
+        tipo_fade_h = "fade-right";
+        tipo_fade_i = "fade-right";
+        tipo_fade_d = "fade-left";
+    } else {
+        classeDivisaoHead = 'divisao-ordem-2';
+        classeDivisaoImagem = 'divisao-ordem-1';
+        tipo_fade_h = "fade-left";
+        tipo_fade_i = "fade-left";
+        tipo_fade_d = "fade-right";
     }
 
     return (
-        <section className={`faixa fleex  ${bg_c}`}>
-            <div className={`divisao ${classeDivisaoDescricao}`}>
-                <DescricaoPr
-                    tipo_fade={tipo_fade_d}
-                    head={head}
-                    cor={cor}
-                    refer={refer}
-                    texto={texto}
-                />
-            </div>
-            <div className={`divisao ${classeDivisaoImagem}`}>
-                <ImagemPr
-                    imagem={imagem}
-                    tipo_fade={tipo_fade_i}
-                />
-            </div>
-        </section>
+        <>
+            {
+                window.innerWidth > 992 ? (
+                    <section className={`${classe} ${bg_c}`}>
+                        <div className={`divisao ${classeDivisaoHead}`}>
+                            <DescricaoHeadPr
+                                tipo_fade={tipo_fade_d}
+                                head={head}
+                                cor={cor}
+                                refer={refer}
+                                texto={texto}
+                            />
+                        </div>
+                        <div className={`divisao ${classeDivisaoImagem}`}>
+                            <ImagemPr
+                                imagem={imagem}
+                                tipo_fade={tipo_fade_i}
+                            />
+                        </div>
+                    </section>
+                ) : (
+
+                    <section className={`${classe} ${bg_c} flex-container`}>
+
+                        <div className={`divisao ${classeDivisaoHead}`}>
+                            <HeadPr
+                                tipo_fade={tipo_fade_h}
+                                head={head}
+                                cor={cor}
+                            />
+                        </div>
+                        <div className={`divisao ${classeDivisaoDescricao}`}>
+                            <DescricaoPr
+                                tipo_fade={tipo_fade_d}
+                                texto={texto}
+                                cor={cor}
+                                refer={refer}
+                            />
+                        </div>
+
+
+                        <div className={`divisao ${classeDivisaoImagem}`}>
+                            <ImagemPr
+                                imagem={imagem}
+                                tipo_fade={tipo_fade_i}
+                            />
+                        </div>
+
+                    </section>)
+
+            }
+
+        </>
+
     );
 }
 

@@ -27,6 +27,7 @@ function Home() {
         head={"Figurinos"}
         imagem={fig1}
         bg_c={"blackbackground"}
+        classe={"faixam fleex bg5"}
       />
 
       <BlocoPr
@@ -37,6 +38,7 @@ function Home() {
         head={"Noivas & Festas"}
         imagem={"https://media.vogue.in/wp-content/uploads/2022/08/289442309_369845058574566_8126628707473336304_n.jpg"}
         bg_c={"whitebackground"}
+        classe={"faixam fleex bg5"}
       />
 
       <BlocoPr
@@ -47,6 +49,7 @@ function Home() {
         head={"Autorais"}
         imagem={"https://s2-marieclaire.glbimg.com/PZABvH9WiMk40ctLRXu38RoJozs=/0x0:1200x1600/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_51f0194726ca4cae994c33379977582d/internal_photos/bs/2022/e/8/6gsCGwSDu9CByruRs8RQ/2022-10-31-2022.jpeg"}
         bg_c={"blackbackground"}
+        classe={"faixam fleex bg5"}
       />
       <Footeer />
     </div>
