@@ -1,7 +1,7 @@
 .bg_footer {
-    background-color: #49005C;
+    background-color: #EDEDED;
     height: 300px;
-    color: white;
+    color: #171717;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,6 +46,6 @@
 .flex_row p {
     margin-top: 0;
     margin-bottom: 0;
-    color: aliceblue;
+    color: #171717;
     padding-left: 20px;
 }

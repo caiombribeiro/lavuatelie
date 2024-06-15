@@ -1,13 +1,25 @@
+.cor_bg_navbar, .scroll-navbar {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona a transição suave */
+}
+
 .cor_bg_navbar {
-    background-color: #E3D5EF !important; /* Altere para a cor desejada */
+    background-color: #EDEDED !important; /* Altere para a cor desejada */
 }
 
 .cor_tx_navbar {
-    color: #48005c !important; /* Altere para a cor desejada */
+    color: #171717 !important; /* Altere para a cor desejada */
+}
+
+.scroll-navbar {
+    background-color: #171717 !important; /* Cor invertida */
+}
+
+.scroll-text {
+    color: #EDEDED !important; /* Cor invertida */
 }
 
 .transparencia{
-    opacity: 0.91;
+    opacity: 1;
 }
 
 .pad{
@@ -33,11 +45,21 @@
 .nav-link {
     border-radius: 15px !important;
     padding: 15px !important;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona a transição suave */
 }
 
 .nav-link:hover {
-    background-color: #49005C !important;
-    color: #E3D5EF !important;
+    background-color: #171717 !important;
+    color: #EDEDED !important;
+}
+
+.scroll-navbar .nav-link:hover {
+    background-color: #EDEDED !important;
+    color: #171717 !important;
+}
+
+.scroll-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') !important;
 }
 
 @media (max-width: 991px) {

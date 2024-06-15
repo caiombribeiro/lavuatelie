@@ -22,26 +22,28 @@ a {
 }
 
 .whiteR{
-    color: #f1ecf5 ;
+    color: #EDEDED ;
 
 }
 
 .black{
-    color: #49005C ;
+    color: #171717 ;
 
 }
 
 .bg_botao{
-    background-color: #49005C !important;
-    border-color: #E3D5EF;
-    color: #E3D5EF;
+    background-color: #444444 !important;
+    color: #EDEDED;
+    border-color: #171717 ;
+    
+    
 
 }
 
 .bg_botao:hover{
-    background-color: #dc96ee !important;
-    color: #49005C;
-    border-color: #250342 ;
+    background-color: #DA0037 !important;
+    color: #EDEDED;
+    border-color: #EDEDED;
 }
 
 .padding_descr{
